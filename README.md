@@ -11,7 +11,7 @@
 
 ### 2. vite+react+ts+react-router@v6 使用 dva
 
-### 3. 为什么对象没有触发重新渲染？ r18 rcselect 文件夹
+### 3. useSelector & reselect?
 
 ### 2. 路由
 

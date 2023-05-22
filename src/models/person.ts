@@ -1,4 +1,17 @@
 import { produce } from 'immer'; // 导入 produce 函数
+import { createSelector } from 'reselect';
+
+import { largeComputation } from '@/utils';
+const getPerson = (state: any) => {
+  console.log('state---', state);
+  return state.person.personInfo;
+};
+export const getPersonName = createSelector(getPerson, (person: any) => {
+  largeComputation();
+  console.log('9999999');
+  return person.name;
+});
+
 export default {
   namespace: 'person',
   state: {
@@ -28,4 +41,7 @@ export default {
       });
     },
   },
+  // selectors: {
+  //   getPersonName,
+  // },
 };
