@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 
 interface RootState {
   person: {
@@ -12,7 +12,7 @@ interface RootState {
 const Hobby: React.FC = () => {
   console.log('Hobby---rerender---------');
   const dispatch = useDispatch();
-  const hobby = useSelector((state: RootState) => state.person.personInfo.hobby);
+  const { hobby } = useSelector((state: RootState) => state.person.personInfo, shallowEqual);
 
   const handleChangeHobby = () => {
     dispatch({

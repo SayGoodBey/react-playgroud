@@ -14,19 +14,19 @@ const Home: FC = () => {
   // });
   return (
     <>
-      <h1>Home</h1>
+      {/* <h1>Home</h1> */}
       {/* <div>name-----{name}</div> */}
       {/* <Name /> */}
+      {/* <NamePerf />
       <NamePerf />
       <NamePerf />
       <NamePerf />
-      <NamePerf />
-      <NamePerf />
-      {/* <NamePerf2 />
+      <NamePerf /> */}
       <NamePerf2 />
       <NamePerf2 />
       <NamePerf2 />
-      <NamePerf2 /> */}
+      <NamePerf2 />
+      <NamePerf2 />
       <br />
       <Age />
       <br />

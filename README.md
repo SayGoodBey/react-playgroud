@@ -18,3 +18,7 @@
 1. [「React 进阶」react-router v6 通关指南](https://juejin.cn/post/7069555976717729805)
 
 2. [如何在 React 应用程序中使用 React Router v6](https://blog.logrocket.com/react-router-v6-guide/)
+
+### useState vs useRef
+
+都能储存数据，useRef 不会导致组件重新渲染

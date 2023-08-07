@@ -8,7 +8,6 @@ const getPerson = (state: any) => {
 };
 export const getPersonName = createSelector(getPerson, (person: any) => {
   largeComputation();
-  console.log('9999999');
   return person.name;
 });
 
